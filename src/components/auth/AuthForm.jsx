@@ -81,10 +81,10 @@ export function AuthForm() {
         {mode === 'login' ? (
           <form className="form-grid" onSubmit={handleLogin}>
             <label>
-              Email
+              Username
               <input
-                type="email"
-                placeholder="admin@example.com"
+                type="text"
+                placeholder="Username"
                 value={loginData.email}
                 onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
                 required
